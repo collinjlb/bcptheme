@@ -1,0 +1,28 @@
+.child-header
+  background-size cover
+  background-repeat no-repeat
+  background-position center
+  position relative
+  min-height 20rem
+  display flex
+  align-items flex-end
+  justify-content center
+  padding 2rem
+  h2
+    margin-bottom 3rem
+    color white
+    text-transform uppercase
+    letter-spacing 2px
+    position relative
+    z-index 2
+    font-weight 300
+    +above(1400px)
+      font-size 3vw
+    +below('s')
+      margin-bottom 1rem
+
+.child-header.is-trident
+  display block
+  h2
+    text-align center
+    margin-top 10rem

@@ -1,0 +1,44 @@
+[
+    {
+        "key": "group_5923290eaa84b",
+        "title": "Custom Post Fields",
+        "fields": [
+            {
+                "key": "field_59232917394b0",
+                "label": "Highlight this post?",
+                "name": "highlight_this_post",
+                "type": "true_false",
+                "instructions": "This adds the post to the 'highlights' area of the blog",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

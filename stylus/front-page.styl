@@ -1,0 +1,364 @@
+.home-page-template
+  .hero
+    position relative
+    z-index 1
+    height 100vh
+    overflow hidden
+    display flex
+    align-items center
+    justify-content center
+    padding 0 5vw
+    #videobcp
+      position absolute
+      bottom 0
+      right 0
+      min-width 100%
+      min-height 100%
+      width auto
+      height auto
+      z-index -1
+    .black-o
+      background-color rgba(0,0,0,0.3)
+    .hero-heading
+      position relative
+      z-index 4
+      font-size 2.25rem
+      text-shadow -1px 0 10px rgba(0,0,0,0.5)
+      font-weight 400
+      color white
+      text-transform uppercase
+      text-align center
+      margin 0
+      +above(1600px)
+        font-size 2.25vw
+
+  .one
+    padding 6rem 18vw
+    +below('s')
+      padding 6rem 10vw
+    .heading-section
+      position relative
+      .my-divider
+        position absolute
+        left -20%
+        height 5px
+        background-color primaryColor
+        border-radius 5px
+        width 32%
+    .one-heading
+      font-weight 300
+      text-align left
+      letter-spacing 4px
+      font-size 1.8rem
+      line-height 2.5rem
+      text-transform uppercase
+      +above(1600px)
+        font-size 1.8vw
+    .one-content
+      p
+        margin-top 2rem
+        +above(1600px)
+          font-size 1vw
+
+  .two.is-trident
+    +below(1024px)
+      display block !important
+
+  .two
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+    display flex
+    align-items stretch
+    padding 4rem 5vw
+    +below(1024px)
+      flex-direction column
+      padding 4rem 0
+    +below('s')
+      background-image none !important
+      background-color primaryColor
+      padding 3rem 5vw
+    .bcp-map
+      flex 1
+      +below('s')
+        display none
+      .mapsvg-wrap
+        height 100%
+        .mapsvg-region
+          stroke-width 3.5px
+    .map-content
+      flex 0 0 30%
+      display flex
+      align-items center
+      justify-content center
+      +below('s')
+        flex-direction column
+      .map-select
+        text-align center
+        align-self flex-start
+        padding 0 3rem
+        color white
+        width 100%
+        h4
+          font-size 2rem
+          letter-spacing 0.4vw
+          margin 0 0 1rem
+        .state-title
+          border 2px solid white
+          background-color primaryColor
+          color white
+          padding 0.5rem 1rem
+          border-radius 25px
+          width 20rem
+          +below(568px)
+            width 100%
+      .tab-content
+        width 100%
+        padding 0 3rem
+        +below('s')
+          display none
+        .active
+          width 100%
+        .tab-pane
+          text-align center
+          margin-top 5rem
+          +below(1024px)
+            margin-top 1rem
+          h2
+            margin 0.5rem 0 0.75rem
+          h4
+            font-size 2rem
+            letter-spacing 0.4vw
+            margin 0
+          h2
+            font-size 3.25rem
+            font-weight 300
+            text-transform uppercase
+            +below('xs')
+              font-size 2.5rem
+          .state-border
+            height 5px
+            background-color primaryColor
+            border-radius 5px
+            width 100%
+            margin-bottom 1rem
+            +below(1024px)
+              margin-bottom 1.5rem
+          .companies
+            display flex
+            align-items center
+            justify-content space-around
+            flex-wrap wrap
+            .company-logo
+              width 50%
+              img
+                width 8vw
+                +above(1600px)
+                  width 8rem
+                +below(1024px)
+                  width 17vw
+              .company.rocky-beacon
+                img
+                  width 12vw
+                  +above(1600px)
+                    width 12rem
+  .three
+    .post-view.is-trident
+      min-height auto
+      .most-recent
+        .right-column
+          &:hover
+            .bottom-left
+              padding-top 30vw !important
+        .vw
+          display block !important
+          .bottom-left
+            padding-top 30vw
+            flex none
+          .read-more
+            border none !important
+    .post-view
+      display flex
+      min-height 40vw
+      .most-recent
+        display flex
+        align-items stretch
+        width 66%
+        +below('s')
+          width 100%
+        .left-column
+          width 20%
+          display flex
+          flex-direction column
+          align-items center
+          +below('s')
+            width 30%
+          .top-left
+            width 100%
+            height 14vw
+            text-align center
+            padding 1vw
+            display flex
+            align-items center
+            flex-wrap wrap
+            justify-content center
+            position relative
+            +below('s')
+              height 16vw
+              h5
+                text-align center
+              .date-border
+                position relative !important
+                top 0 !important
+                left 0 !important
+                width 100% !important
+            h5
+              margin 0
+            h5:first-child
+              font-size 2.5vw
+              line-height 2.5vw
+              letter-spacing 0.7vw
+              text-transform uppercase
+            h5:last-child
+              font-size 6vw
+              font-weight 600
+              letter-spacing 0.5vw
+            .date-border
+              height 0.3vw
+              position absolute
+              z-index 4
+              top 3.5vw
+              left 1vw
+              width 20vw
+              background-color secondaryColor
+              border-radius 5px
+              margin 0.5vw 0 0.25vw
+          .bottom-left
+            width 100%
+            height 100%
+            background-size contain
+            background-position bottom left
+            background-repeat no-repeat
+            background-color #70bae9
+            display flex
+            justify-content flex-end
+            img
+              height 10vw
+        .right-column
+          display flex
+          align-items flex-end
+          background-size cover
+          background-repeat no-repeat
+          background-position center
+          position relative
+          .grey-o2
+            cursor pointer
+            opacity 0
+            transition 0.5s
+            background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.43) 86%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 86%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 86%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          &:hover
+            .grey-o2
+              opacity 1
+            .right-bottom
+              .bottom-left
+                opacity 1
+                margin-bottom 0
+                padding-top 1vw
+                +below('s')
+                  margin-bottom 1vw
+          .right-bottom
+            display flex
+            align-items flex-end
+            padding 2vw
+            color white
+            +below('s')
+              flex-wrap wrap
+            a
+              color white
+              text-transform uppercase
+            h6
+              font-size 1vw
+            p, h6
+              margin 0
+            .bottom-left
+              width 75%
+              padding-right 1vw
+              letter-spacing 2px
+              margin-bottom 1vw
+              opacity 0
+              transition 0.5s
+              position relative
+              z-index 4
+              +below('s')
+                width 100%
+                margin-bottom 2vw
+            .read-more
+              text-align center
+              letter-spacing 2px
+              font-weight 300
+              padding 1vw 0.5vw
+              border 3px solid white
+              position relative
+              z-index 4
+              width 25%
+              +below('s')
+                width 100%
+      .right-container
+        display flex
+        flex-direction column
+        align-items center
+        width 34%
+        +below('s')
+          display none
+        .second-recent
+          width 100%
+          height 25vw
+          color white
+          position relative
+          display flex
+          flex-direction column
+          background-size cover
+          background-position center
+          background-repeat no-repeat
+          h4, h3
+            margin 0
+          h4
+            text-transform uppercase
+            letter-spacing 4px
+            font-size 1.5vw
+          .top-right
+            align-self flex-end
+            padding 0.5vw 1.25vw
+            background-color primaryColor
+            display flex
+            position relative
+            z-index 3
+          h3
+            text-transform uppercase
+            padding 1.5vw
+            letter-spacing 3px
+            position relative
+            z-index 3
+            margin-top auto
+            font-size 1.5vw
+        .third-container
+          display flex
+          align-items stretch
+          width 100%
+          height 100%
+          .third-recent
+            width 65%
+            position relative
+          .go-blog
+            width 35%
+            display flex
+            align-items center
+            justify-content center
+            .arrow
+              height 7vw
+              width 9vw
+              background-size contain
+              background-repeat no-repeat
+              background-position center

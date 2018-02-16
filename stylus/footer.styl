@@ -1,0 +1,112 @@
+.site-footer
+  background-color #2a2a2a
+  color white
+  p
+    margin-bottom 0.5rem
+  h6
+    text-transform uppercase
+    font-size 1.5rem
+  a
+    color white
+  .footer-top.is-trident
+    +below('s')
+      display block
+  .footer-top
+    padding 2rem 5vw 1rem
+    display flex
+    justify-content space-between
+    align-items flex-start
+    +below(1440px)
+      padding 3rem 5vw
+    +below(1024px)
+      align-items center
+    +below('s')
+      flex-direction column
+    .footer-logo, .contact, .form
+      flex 1
+    p, a
+      font-size 1.1rem
+    .footer-logo
+      background-size contain
+      background-position left top
+      background-repeat no-repeat
+      height 8rem
+      +below(1024px)
+        flex 0 0 30% !important
+      +below('s')
+        width 100%
+        margin-bottom 2rem !important
+        background-position center
+        height 15vw
+    .contact.is-trident
+      +below('xs')
+        display block
+    .contact
+      display flex
+      justify-content: flex-start
+      align-items: flex-start
+      +below(1024px)
+        padding-left 5rem
+      +below('s')
+        padding-left 0
+        width 100%
+      +below('xs')
+        flex-direction column
+      .left-col, .right-col
+        flex 1
+        +below('s')
+          text-align center
+        +below('xs')
+          width 100%
+      .left-col
+        +below('xs')
+          margin-bottom 3rem
+        .social
+          margin-top 2rem
+          .fa
+            font-size 2rem
+            padding-right 1rem
+      .right-col
+        .phone
+          margin-top 2rem
+    .footer-logo, .contact
+      margin-top 4rem
+      +below(1440px)
+        margin 0
+    .form
+      +below(1440px)
+        display none
+      #gform_1
+        label
+          display none
+        input::placeholder, textarea::placeholder
+          color #2a2a2a
+          text-transform uppercase
+          letter-spacing 2px
+          transition 0.2s
+        input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder
+          color: transparent
+        input, textarea
+          padding 0.5rem 1rem
+        .medium
+          width 100% !important
+        .gform_footer
+          margin-top 0
+          text-align right
+          .gform_button
+            background-color transparent
+            color white
+            text-transform uppercase
+            letter-spacing 1px
+            border 2px solid white
+            padding 0.5rem 1rem
+            cursor pointer
+  .footer-bottom
+    padding 0.5rem 10vw
+    text-align center
+    background-color #141414
+    letter-spacing 1px
+    p
+      margin-bottom 0
+    p, a
+      font-size 0.8rem

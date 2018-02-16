@@ -1,0 +1,62 @@
+body
+  transition .75s
+
+#slide-out-menu // put the menu ID here
+  ul
+    margin 0
+    padding 1rem 4rem
+    li
+      list-style none
+      padding 1rem 0
+      a
+        color #fff
+
+.titt-menu-btn-wrapper
+  padding: 8px
+  cursor: pointer
+  .bar1, .bar2, .bar3
+    display: block
+    height: 4px
+    width: 40px
+    margin: 6px auto
+    background-color: orange
+    transition: all 0.5s
+  &.opened
+    .bar1
+      transform: translateY(10px) rotate(45deg)
+    .bar2
+      width: 0
+      margin: 0 auto
+    .bar3
+      transform: translateY(-10px) rotate(-45deg)
+
+.titt-menu
+  transition .5s
+  top 0
+  width 0
+  height 100%
+  background #000
+  position fixed
+  max-width 80%
+
+.titt-menu-left
+  margin-left -250px
+  left 0
+
+.titt-menu-right
+  margin-right -250px
+  right 0
+
+.titt-menu-show-left
+  width 250px
+  margin-left 0
+
+.titt-menu-show-right
+  width 250px
+  margin-right 0
+
+.titt-menu-body-right
+  margin-right 250px
+
+.titt-menu-body-left
+  margin-left 250px

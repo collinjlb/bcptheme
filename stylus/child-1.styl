@@ -1,0 +1,53 @@
+.child-container
+  padding 3rem 0 0
+  .row, .vc_row
+    margin-left 0
+    margin-right 0
+  .vc_row
+    padding-left 0
+    padding-right 0
+  .divider
+    border-radius 10px
+    margin 0 auto 2rem
+    width 50%
+  a
+    color primaryColor
+    background-color #efefef
+    padding 1rem 2rem
+    transition 0.5s
+    &:hover
+      padding 1.25rem 2.5rem
+  h1, h2, h3
+    font-weight 300
+    letter-spacing 1px
+  h1
+    font-size 2.8rem
+  h4
+    font-weight 400
+  .section:first-child
+    padding 2rem 20vw 3rem !important
+    +below('s')
+      padding 2rem 5vw 3rem !important
+  .section
+    padding 5rem 20vw 4rem !important
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+    position relative
+    +below('s')
+      padding 5rem 5vw 4rem !important
+    .smudge
+      position absolute
+      bottom 0
+      background-image url('http://jlbdev1.net/bcpgroup/public_html/wp-content/uploads/2018/01/design-element.png')
+  .section:nth-of-type(even)
+    color white
+    background rgba(0,143,195,1)
+    background -moz-linear-gradient(top, rgba(0,143,195,1) 0%, rgba(50,189,235,1) 100%)
+    background -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,143,195,1)), color-stop(100%, rgba(50,189,235,1)))
+    background -webkit-linear-gradient(top, rgba(0,143,195,1) 0%, rgba(50,189,235,1) 100%)
+    background -o-linear-gradient(top, rgba(0,143,195,1) 0%, rgba(50,189,235,1) 100%)
+    background -ms-linear-gradient(top, rgba(0,143,195,1) 0%, rgba(50,189,235,1) 100%)
+    background linear-gradient(to bottom, rgba(0,143,195,1) 0%, rgba(50,189,235,1) 100%)
+  .section:nth-of-type(odd)
+    color fourthColor

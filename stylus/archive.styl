@@ -1,0 +1,117 @@
+.blog-container
+  display flex
+  padding 5vw 10vw 4vw
+  flex-wrap wrap
+  .blog-post
+    margin-bottom 2vw
+    width 32%
+    box-shadow 0 0 10px rgba(0,0,0,0.2)
+    &:nth-child(3n+2)
+      margin 0 auto 2vw
+      +below(1024px)
+        margin 0 0 2vw
+    &:nth-child(2n+2)
+      +below(1024px)
+        margin-left auto
+    +below(1024px)
+      width 49%
+    +below('s')
+      width 100%
+    &:hover
+      .featured-image
+        p, .overlay
+          opacity 1
+      .content
+        .title
+          color fourthColor
+        .author, h5
+          color primaryColor
+    .featured-image
+      position relative
+      padding 3vw 1.75vw
+      background-size cover
+      background-position center
+      background-repeat no-repeat
+      height 50%
+      display flex
+      align-items center
+      +below('s')
+        padding 2rem
+      p
+        position relative
+        z-index 2
+        color white
+        opacity 0
+        margin-bottom 0
+        transition 0.5s
+      .overlay
+        opacity 0
+        transition 0.5s
+    .content
+      text-align center
+      height 50%
+      display flex
+      -ms-flex flex
+      flex-direction column
+      padding 1vw 2vw
+      +below('s')
+        padding 2rem
+        height auto
+      .title
+        font-size 1.25vw
+        +below(1440px)
+          font-size 1.25rem
+      .author
+        transition 0.5s
+      .time
+        display flex
+        margin-top auto
+        h5
+          margin-bottom 0
+          transition 0.5s
+        .number
+          font-weight 600
+          font-size 1.25vw
+          line-height 1.25vw
+          +below(1024px)
+            font-size 1.25rem
+            line-height 1.25rem
+        .month
+          text-transform uppercase
+          margin-left 3px
+          margin-top auto
+          font-size 1vw
+          line-height 1.1vw
+          +below(1024px)
+            font-size 1rem
+            line-height 1.1rem
+
+
+.single-post-page
+  .child-header
+    a
+      color white
+  .single-post
+    padding 3vw 20vw 4vw
+    +below('s')
+      padding 3vw 10vw
+    .time
+      display flex
+      align-items flex-end
+      justify-content flex-start
+      width 100%
+      h5
+        margin-bottom 0.5vw
+        color primaryColor
+      h5:first-child
+        font-weight 600
+        font-size 1.3vw
+        line-height 1.3vw
+      h5:last-child
+        font-size 1vw
+        text-transform uppercase
+        letter-spacing 1px
+        margin-left 0.25vw
+    h6
+      font-weight 600
+      letter-spacing 1px

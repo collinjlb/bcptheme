@@ -1,0 +1,135 @@
+.contact
+  .contact-container
+    margin 3rem 9vw
+  .contact-social
+    .social-icons
+      display flex
+      justify-content center
+      text-align center
+      h6
+        text-transform uppercase
+        color primaryColor
+        letter-spacing 2px
+        transition 0.5s
+      a
+        color primaryColor
+        transition 0.5s
+        &:hover
+          color secondaryColor
+      a:hover + h6
+        color secondaryColor
+      .fa
+        font-size 3rem
+        margin  0 1.5rem 1.5rem
+  .contact-directly
+    h2
+      color secondaryColor
+      text-transform uppercase
+      text-align center
+      letter-spacing 4px
+      margin-top 3rem
+      margin-bottom 4rem
+      +below(410px)
+        font-size 5.5vw
+      span
+        padding-bottom 1.5rem
+        border-bottom 2px solid secondaryColor
+        +below(545px)
+          padding-bottom 3rem
+    .form
+      margin 0 auto
+      .gform_body
+        ::-webkit-input-placeholder
+          text-transform uppercase
+          letter-spacing 2px
+          opacity 1
+          transition 0.2s
+        ul
+          display flex
+          flex-direction column
+          text-align center
+          .gfield
+            padding-right 0
+          label
+            font-weight 400
+            color primaryColor
+            letter-spacing 1px
+          .medium
+            width 100% !important
+          .ginput_container
+            margin-top 0
+            textarea, input
+              border none
+              background-color #f8f8f8
+              padding 1rem !important
+              text-align center
+              &:focus
+                outline none
+                &::-webkit-input-placeholder
+                  opacity 0
+            input
+              margin 0.5rem 0
+          span
+            label
+              display none
+      .gform_footer
+        text-align center
+        margin 0
+        input
+          color primaryColor
+          font-weight 400
+          text-transform uppercase
+          position relative
+          letter-spacing 2px
+          z-index 0
+          background-color transparent
+          border 3px solid primaryColor
+          padding 1rem
+          cursor pointer
+          margin-right 0
+          width 25%
+          transition 0.5s
+          +below('s')
+            width 100%
+          &:hover
+            background-color primaryColor
+            color white
+            border-color transparent
+  .more-info
+    margin-top 4rem
+    position relative
+    img
+      position absolute
+      right -9vw
+      top -12rem
+      width 12vw
+      +below('s')
+        display none
+    h3
+      color fourthColor
+      text-transform uppercase
+      text-align center
+      letter-spacing 1px
+    .contact
+      display flex
+      justify-content space-around
+      align-items flex-start
+      +below('s')
+        flex-direction column
+      .info
+        flex 1
+        text-align center
+        margin-top 2rem
+        +below('s')
+          width 100%
+        .name
+          font-weight 600
+        .title
+          font-weight 300
+        .name, .title
+          letter-spacing 1px
+        a
+          color primaryColor
+          transition 0.5s
+          &:hover
+            color secondaryColor

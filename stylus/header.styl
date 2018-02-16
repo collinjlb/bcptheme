@@ -1,0 +1,159 @@
+header
+  position fixed
+  width 100%
+  top 0
+  left 0
+  transition 0.5s
+  z-index 999
+  .header
+    display flex
+    align-items stretch
+    justify-content space-between
+    padding 3rem 4rem
+    transition 0.5s
+    +below('s')
+      padding 2rem 4rem
+    +below('xs')
+      padding 2rem
+    .header-left
+      width 25%
+      height 8rem
+      transition 0.5s
+      +below('s')
+        flex 0 0 45%
+      .logo-container
+        height 100%
+        width 100%
+        .logo
+          background-size contain
+          background-repeat no-repeat
+          background-position left
+          height 100%
+    .header-right
+      width 75%
+      .menu-top-menu-container
+        height 100%
+        .menu
+          height 100%
+      .menu
+        display flex
+        justify-content flex-end
+        .menu-item
+          display flex
+          align-items center
+          text-align center
+          padding 0.5rem 1rem
+          margin 0 1rem
+          line-height 2rem
+          a
+            color white
+            font-size 1.1rem
+            +above(1600px)
+              font-size 1.1vw
+        .menu-item-has-children
+          .sub-menu.scrollMenu
+            top 6rem
+          .sub-menu
+            display none
+            position absolute
+            padding-right 4rem
+            justify-content flex-end
+            width 50%
+            top 10rem
+            right 0
+            background-color rgba(112,186,231,0.85)
+            .menu-item
+              margin 0
+              justify-content flex-end
+              padding 0.5rem 2rem
+
+.scrollMenu
+  width 100% !important
+
+.mobileScroll
+  overflow-y hidden
+
+.header-active
+  padding 1.5rem 4rem !important
+  background-color rgba(40,40,40,0.85)
+  .header-left
+    height 3rem !important
+
+.header-right
+  +below('s')
+    display none
+
+.mobile-button, .mobile-menu
+  background-color transparent
+  border 0
+  &:focus
+    outline-color primaryColor
+  .bar
+    background-color white
+  +above('m')
+    display none
+
+.mobile-menu
+  display none
+  height 100vh
+  position fixed
+  top 0
+  left 0
+  width 100%
+  z-index -1
+  background-color #2a2a2a
+  .menu-container
+    width 100%
+    display flex
+    align-items center
+    justify-content center
+    .menu
+      list-style none
+      margin-bottom 0
+      text-align center
+      .menu-item
+        padding 0.5rem 0
+        a
+          color white
+          font-size 1.5rem
+    .menu-item-has-children
+      .sub-menu
+        list-style none
+        margin-bottom 0
+        li
+          a
+            font-size 1.2rem
+            opacity 0.8
+
+
+/* Mobile Menu Button that changes to X */
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}

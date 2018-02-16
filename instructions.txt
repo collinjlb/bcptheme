@@ -1,0 +1,30 @@
+Alright, listen up.
+
+The map plugin is MapSVG.
+To control the map, there are a few different elements in play to make this entire thing work.
+
+1. Open up the MapSVG tab in the backend.
+2. On the right view, click on the drop down menu and go to "Regions".
+3. This is where we set the active states in which BCP has companies in. When active, change the color to #efefef.
+4. Take note of any id "US-(STATE)" in which the state is active.
+!IMPORTANT - That is literally all that should be done while in the plugin. :)
+
+After you have this information, go to custom fields and edit "Location Content"
+
+1. Click on Locations and go into the sub-field "Companies" in the repeater.
+2. This is a checkbox field, and the value is an anchor tag. The anchor tag should be created and edited to go to the correct company
+page and background image should be changed to the correct logo url.
+3. The label will in fact be printed out into the front-end, so be sure to make the label the company name as it should be displayed.
+4. After all 7 companies are created with the proper value and label, update and travel to the "Options" Page.
+
+The Locations ID needs to match the ID taken from the MapSVG Plugin. The State will be displayed on the front end, so make sure it's
+spelled correctly.
+
+1. Select the companies that are in respective state.
+
+
+
+## FOR DEVELOPERS
+The mobile option select is matched with the state id to take you to the locations page. There is a simple script running to take you
+to the locations page with a hash of the selected state ID. It'll auto scroll to the tabs when it reaches the page and then functions
+as ordinary bootstrap tabs.

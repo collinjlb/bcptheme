@@ -1,0 +1,57 @@
+/* / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
+/ / Fonts/Icon Sets
+/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+// Import Font Here
+
+img
+  max-width 100%
+  height auto
+
+html
+  a
+    color #333
+  a:visited, a:focus, a:hover, a:active
+    text-decoration none
+  body
+    font-family primaryFont
+    h1
+      font-weight 600
+    h2
+      font-weight 300
+    h3
+      font-weight 400
+    ul
+      padding 0
+      list-style none
+      margin-bottom 0
+
+.post-table
+  td
+    padding 0.25rem 1rem
+
+select
+  -webkit-appearance none
+  background url('http://jlbdev1.net/bcpgroup/public_html/wp-content/uploads/2018/02/chevron-down.png') no-repeat 97%
+
+#wpadminbar
+  position fixed
+
+.desktop
+  +below('s')
+    display none
+.mobile
+  +above('m')
+    display none
+
+.hidden_animated
+  opacity 0
+.animated
+  opacity 1 !important
+// Wordpress required classes
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
